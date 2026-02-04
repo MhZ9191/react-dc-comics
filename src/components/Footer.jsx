@@ -46,6 +46,13 @@ export default function Footer() {
             </div>
           </div>
         </section>
+
+        {/* SECTION TWO */}
+        <section className="second-sec-footer">
+          <div className="second-div-footer">
+            <div className="footer-link-container"></div>
+          </div>
+        </section>
       </footer>
     </>
   );

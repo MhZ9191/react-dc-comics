@@ -2,6 +2,7 @@ export default function Header() {
   return (
     <>
       <header>
+        <div className="top-header"></div>
         <section className="sec-header">
           <div className="div-header">
             <div className="logo-header">
