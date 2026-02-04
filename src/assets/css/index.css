@@ -12,6 +12,8 @@ a {
   text-decoration: none;
 }
 
+/* HEADER */
+
 .sec-header {
   padding: 0 10px;
 }
@@ -110,6 +112,25 @@ a {
 
 .menu-link > li:hover {
   box-shadow: 0 0 10px #0c7cec;
+}
+
+/* MAIN */
+
+.sec-main {
+  background-color: #1c1c1c;
+  min-height: 100px;
+  color: white;
+  padding: 10px;
+}
+
+.div-main {
+  width: 70vw;
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
 }
 
 @media screen and (min-width: 992px) {
