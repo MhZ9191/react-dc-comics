@@ -54,9 +54,11 @@ a {
 }
 
 .active {
-  background-color: #b3d4f3;
-  border-radius: 6px;
   position: relative;
+}
+
+.active a {
+  color: #0282f9;
 }
 
 .active:after {
@@ -161,6 +163,18 @@ a {
   display: flex;
   align-items: center;
   min-height: 100px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(100% / 2 - (20px * 1 / 2));
+  min-height: 100px;
+}
+
+.card img {
+  max-width: 80%;
+  width: 100%;
 }
 
 /* FOOTER ONE*/
