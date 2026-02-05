@@ -1,3 +1,4 @@
+import Links from "./Links";
 const miniCard = [
   {
     source: "/buy-comics-digital-comics.png",
@@ -45,7 +46,24 @@ export default function Footer() {
         {/* SECTION TWO */}
         <section className="second-sec-footer">
           <div className="second-div-footer">
-            <div className="footer-link-container"></div>
+            <div className="footer-link-container">
+              {Links.map(({ title, allLinks }, index) => {
+                return (
+                  <div key={index}>
+                    <span>{title}</span>
+                    <ul>
+                      {allLinks.map(({ url, text }, ind) => {
+                        return (
+                          <li key={ind}>
+                            <a href={url}>{text}</a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </section>
       </footer>
