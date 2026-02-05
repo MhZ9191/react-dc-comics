@@ -23,14 +23,8 @@ export default function Main() {
                 </div>
               );
             })}
-
-            {/* <div className="card">
-              <figure>
-                <img src={Comics[0].thumb} alt={Comics[0].title} />
-                <figcaption>{Comics[0].title}</figcaption>
-              </figure>
-            </div> */}
           </div>
+          <div className="load-more">LOAD MORE</div>
         </section>
       </main>
     </>
