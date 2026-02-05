@@ -4,15 +4,22 @@ export default function Main() {
   return (
     <>
       <main>
+        <section className="sec-main-top">
+          <div className="sec-main-top-div">
+            <span>CURRENT SERIES</span>
+          </div>
+        </section>
         <section className="sec-main">
           <div className="div-main">
-            {Comics.map(({ id, title, thumb }) => {
+            {Comics.map(({ id, title, series, thumb }) => {
               return (
                 <div key={id} className="card">
-                  <figure>
-                    <img src={thumb} alt={title} />
-                    <figcaption>{title}</figcaption>
-                  </figure>
+                  <div>
+                    <figure>
+                      <img src={thumb} alt={title} />
+                      <figcaption>{series}</figcaption>
+                    </figure>
+                  </div>
                 </div>
               );
             })}

@@ -148,6 +148,28 @@ a {
 
 /* MAIN */
 
+.sec-main-top {
+  height: 350px;
+  background-image: url("/jumbotron.jpg");
+}
+
+.sec-main-top-div {
+  width: 80vw;
+  position: relative;
+  margin: 0 auto;
+  height: 350px;
+}
+
+.sec-main-top-div > span {
+  position: absolute;
+  background-color: #0282f9;
+  color: white;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+}
+
 .sec-main {
   background-color: #1c1c1c;
   min-height: 100px;
@@ -163,18 +185,29 @@ a {
   display: flex;
   align-items: center;
   min-height: 100px;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
 }
 
 .card {
-  width: calc(100% / 2 - (20px * 1 / 2));
-  min-height: 100px;
+  width: calc(100% / 2 - (10px * 3 / 2));
+  height: 400px;
+  padding: 5px;
+}
+
+.card > div {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .card img {
-  max-width: 80%;
   width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
 }
 
 /* FOOTER ONE*/
@@ -242,7 +275,16 @@ a {
 
 /* MEDIA QUERY */
 
+@media screen and (min-width: 678px) {
+  .card {
+    width: calc(100% / 4 - (10px * 3 / 4));
+  }
+}
+
 @media screen and (min-width: 992px) {
+  .card {
+    width: calc(100% / 6 - (10px * 5 / 6));
+  }
   .link-header {
     display: flex;
   }
