@@ -11,13 +11,6 @@ const links = [
       { url: "#", text: "News" },
     ],
   },
-  {
-    title: "SHOP",
-    allLinks: [
-      { url: "#", text: "Shop DC" },
-      { url: "#", text: "Shop DC Collectibles" },
-    ],
-  },
 
   {
     title: "DC",
@@ -43,6 +36,13 @@ const links = [
       { url: "#", text: "DC Kids" },
       { url: "#", text: "DC Universe" },
       { url: "#", text: "DC Power Visa" },
+    ],
+  },
+  {
+    title: "SHOP",
+    allLinks: [
+      { url: "#", text: "Shop DC" },
+      { url: "#", text: "Shop DC Collectibles" },
     ],
   },
 ];

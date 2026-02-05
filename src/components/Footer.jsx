@@ -49,12 +49,12 @@ export default function Footer() {
             <div className="footer-link-container">
               {Links.map(({ title, allLinks }, index) => {
                 return (
-                  <div key={index}>
+                  <div key={index} className="foo-link">
                     <span>{title}</span>
                     <ul>
                       {allLinks.map(({ url, text }, ind) => {
                         return (
-                          <li key={ind}>
+                          <li key={ind} className="foot-li">
                             <a href={url}>{text}</a>
                           </li>
                         );

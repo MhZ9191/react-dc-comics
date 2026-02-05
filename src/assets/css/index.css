@@ -291,15 +291,59 @@ a {
 
 /* FOOTER LINK */
 
+.footer-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 30px 0;
+  gap: 20px;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.foo-link {
+  width: 100%;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.foo-link span {
+  display: block;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.foot-li a {
+  text-overflow: ellipsis;
+  color: #959595;
+  padding: 5px 0;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (min-width: 678px) {
   .card {
     width: calc(100% / 4 - (10px * 3 / 4));
   }
+  .foo-link {
+    width: calc(100% / 2 - (20px * 1 / 2));
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .footer-link-container {
+    width: 30%;
+  }
+  .foo-link {
+    width: calc(100% / 3 - (20px * 2 / 3));
+  }
   .card {
     width: calc(100% / 6 - (10px * 5 / 6));
   }
