@@ -278,8 +278,11 @@ a {
 
 .second-sec-footer {
   background-image: url("/footer-bg.jpg");
-  min-height: 400px;
   position: relative;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .second-div-footer {
@@ -287,6 +290,15 @@ a {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+.img-foot {
+  display: none;
+  background-image: url("/dc-logo-bg.png");
+  width: 40%;
+  background-repeat: no-repeat;
+  transform: scale(1.1);
+  overflow: hidden;
 }
 
 /* FOOTER LINK */
@@ -325,6 +337,40 @@ a {
   white-space: nowrap;
   overflow: hidden;
 }
+/* LAST FOOT */
+
+.last-foot {
+  min-height: 100px;
+  background-color: #303030;
+}
+
+.last-div-foot {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-link div:first-child {
+  color: #0282f9;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.sign-up-now {
+  color: white;
+  font-weight: 700;
+  padding: 15px;
+  border: 2px #0282f9 solid;
+}
 
 /* MEDIA QUERY */
 
@@ -358,5 +404,8 @@ a {
   }
   .first-div-mini-card span {
     display: inline;
+  }
+  .img-foot {
+    display: inline-block;
   }
 }

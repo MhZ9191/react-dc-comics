@@ -64,6 +64,30 @@ export default function Footer() {
                 );
               })}
             </div>
+            <div className="img-foot"></div>
+          </div>
+        </section>
+        <section className="last-foot">
+          <div className="last-div-foot">
+            <div className="sign-up-now">SIGN-UP NOW!</div>
+            <div className="social-link">
+              <div>FOLLOW US</div>
+              <div>
+                <img src="/footer-twitter.png" alt="#" />
+              </div>
+              <div>
+                <img src="/footer-facebook.png" alt="#" />
+              </div>
+              <div>
+                <img src="/footer-youtube.png" alt="#" />
+              </div>
+              <div>
+                <img src="/footer-pinterest.png" alt="#" />
+              </div>
+              <div>
+                <img src="/footer-periscope.png" alt="#" />
+              </div>
+            </div>
           </div>
         </section>
       </footer>
