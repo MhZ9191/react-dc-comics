@@ -363,6 +363,7 @@ a {
   color: #0282f9;
   font-weight: 800;
   font-size: 22px;
+  display: none;
 }
 
 .sign-up-now {
@@ -407,5 +408,8 @@ a {
   }
   .img-foot {
     display: inline-block;
+  }
+  .social-link div:first-child {
+    display: block;
   }
 }

@@ -1,4 +1,4 @@
-const links = [
+const footerlinks = [
   {
     title: "DC COMICS",
     allLinks: [
@@ -47,4 +47,4 @@ const links = [
   },
 ];
 
-export default links;
+export default footerlinks;

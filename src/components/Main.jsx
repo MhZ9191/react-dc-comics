@@ -1,6 +1,4 @@
-import Comics from "./Comics";
-
-export default function Main() {
+export default function Main({ comicsLink }) {
   return (
     <>
       <main>
@@ -11,7 +9,7 @@ export default function Main() {
         </section>
         <section className="sec-main">
           <div className="div-main">
-            {Comics.map(({ id, title, series, thumb }) => {
+            {comicsLink.map(({ id, title, series, thumb }) => {
               return (
                 <div key={id} className="card">
                   <div>
