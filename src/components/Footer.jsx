@@ -1,4 +1,4 @@
-import Links from "./Footerlinks";
+import Links from "./links/Footerlinks";
 const miniCard = [
   {
     source: "/buy-comics-digital-comics.png",
