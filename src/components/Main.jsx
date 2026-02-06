@@ -1,3 +1,5 @@
+import Card from "./cards/Card";
+
 export default function Main({ comicsLink }) {
   return (
     <>
@@ -11,14 +13,13 @@ export default function Main({ comicsLink }) {
           <div className="div-main">
             {comicsLink.map(({ id, title, series, thumb }) => {
               return (
-                <div key={id} className="card">
-                  <div>
-                    <figure>
-                      <img src={thumb} alt={title} />
-                      <figcaption>{series}</figcaption>
-                    </figure>
-                  </div>
-                </div>
+                <Card
+                  key={id}
+                  id={id}
+                  title={title}
+                  series={series}
+                  thumb={thumb}
+                />
               );
             })}
           </div>
